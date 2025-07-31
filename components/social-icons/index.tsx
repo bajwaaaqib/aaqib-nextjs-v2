@@ -26,17 +26,9 @@ type SocialIconProps = {
   size?: number
 }
 
-export default function SocialIcon({
-  kind,
-  href,
-  size = 8,
-}: SocialIconProps) {
+export default function SocialIcon({ kind, href, size = 8 }: SocialIconProps) {
   // if no href, or invalid mailto: link, render nothing
-  if (
-    !href ||
-    (kind === 'mail' &&
-      !/^mailto:[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}$/.test(href))
-  ) {
+  if (!href || (kind === 'mail' && !/^mailto:[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}$/.test(href))) {
     return null
   }
 
@@ -51,13 +43,11 @@ export default function SocialIcon({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-gray-700 dark:text-gray-200 hover:text-primary-500 dark:hover:text-primary-400 transition"
+      className="hover:text-primary-500 dark:hover:text-primary-400 text-gray-700 transition dark:text-gray-200"
       aria-label={kind}
     >
       <span className="sr-only">{kind}</span>
-      <IconComponent
-        className={`h-${size} w-${size} fill-current`}
-      />
+      <IconComponent className={`h-${size} w-${size} fill-current`} />
     </a>
   )
 }

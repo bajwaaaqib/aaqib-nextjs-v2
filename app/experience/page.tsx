@@ -1,12 +1,12 @@
-'use client';
+'use client'
 
-import React from 'react';
+import React from 'react'
 
 interface Experience {
-  company: string;
-  role: string;
-  duration: string;
-  description: string[];
+  company: string
+  role: string
+  duration: string
+  description: string[]
 }
 
 const experiences: Experience[] = [
@@ -44,19 +44,19 @@ const experiences: Experience[] = [
       'Helped brands rank on Google and drive traffic through blogging and keyword strategies.',
     ],
   },
-];
+]
 
 export default function ExperiencePage() {
   return (
-    <main className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-4xl font-bold text-center mb-12">Experience</h1>
+    <main className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
+      <h1 className="mb-12 text-center text-4xl font-bold">Experience</h1>
       <div className="space-y-10">
         {experiences.map((exp, index) => (
-          <div key={index} className="bg-white shadow-md p-6 rounded-2xl border">
+          <div key={index} className="rounded-2xl border bg-white p-6 shadow-md">
             <h2 className="text-2xl font-semibold text-gray-800">{exp.company}</h2>
-            <p className="text-sm text-gray-500 italic mb-1">{exp.role}</p>
-            <p className="text-sm text-gray-400 mb-4">{exp.duration}</p>
-            <ul className="list-disc list-inside space-y-2 text-gray-700">
+            <p className="mb-1 text-sm text-gray-500 italic">{exp.role}</p>
+            <p className="mb-4 text-sm text-gray-400">{exp.duration}</p>
+            <ul className="list-inside list-disc space-y-2 text-gray-700">
               {exp.description.map((item, idx) => (
                 <li key={idx}>{item}</li>
               ))}
@@ -65,5 +65,5 @@ export default function ExperiencePage() {
         ))}
       </div>
     </main>
-  );
+  )
 }
