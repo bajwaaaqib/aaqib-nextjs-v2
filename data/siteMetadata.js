@@ -1,6 +1,6 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Developed by me',
+  title: 'AAQIB',
   author: 'Aaqib Bajwa',
   headerTitle: 'AAQIB',
   description: 'Graphic Designer and Digital Marketer',
