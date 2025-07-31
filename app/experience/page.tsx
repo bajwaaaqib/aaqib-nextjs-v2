@@ -12,8 +12,8 @@ interface Experience {
 const experiences: Experience[] = [
   {
     company: 'ARD Perfumes Factory LLC',
-    role: 'Graphic Designer & Digital Marketer with IT Support',
-    duration: '2022 – Present | UAE',
+    role: 'Designer & IT Executive',
+    duration: '2022 – Present | UAQ, UAE',
     description: [
       // New Product Development
       'Developed product designs for bottles and packaging according to management briefs',
@@ -21,7 +21,7 @@ const experiences: Experience[] = [
       'Coordinated with purchase department and suppliers for packaging samples',
       'Conducted quality checks and ensured standards for all packaging materials',
       'Managed timelines for packaging material delivery for NPD projects',
-      
+
       // E-commerce and Digital Marketing
       'Managed e-commerce platforms including Amazon, Noon, and company website',
       'Created social media content (graphics, banners, promo campaigns, reels, stories)',
@@ -30,7 +30,7 @@ const experiences: Experience[] = [
       'Implemented SEO optimization and published regular blog content',
       'Designed brand promotion materials (catalogs, brochures, business cards, uniforms)',
       'Coordinated with purchase department for marketing material procurement',
-      
+
       // IT and Systems
       'Managed complete IT infrastructure including servers and networking',
       'Provided technical support for ERP and other business applications',
@@ -46,9 +46,9 @@ const experiences: Experience[] = [
     role: 'Freelance Graphic Designer & Social Media Specialist',
     duration: '2018 – 2022 | Remote',
     description: [
-      'Provided graphic design services to international clients in perfume, beauty, and fashion industries.',
-      'Built brand identities, packaging mockups, and visual guidelines for e-commerce businesses.',
-      'Consulted startups on digital marketing strategies, SEO, and social media management.',
+      'Provided graphic design services to international clients in perfume, beauty, and fashion industries',
+      'Built brand identities, packaging mockups, and visual guidelines for e-commerce businesses',
+      'Consulted startups on digital marketing strategies, SEO, and social media management'
     ],
   },
   {
@@ -56,9 +56,9 @@ const experiences: Experience[] = [
     role: 'Web Developer & SEO Consultant',
     duration: '2018 – Present',
     description: [
-      'Developed websites using WordPress and React (Next.js) for local businesses.',
-      'Optimized sites for SEO using on-page, off-page, and technical techniques.',
-      'Helped brands rank on Google and drive traffic through blogging and keyword strategies.',
+      'Developed websites using WordPress and React (Next.js) for local businesses',
+      'Optimized sites for SEO using on-page, off-page, and technical techniques',
+      'Helped brands rank on Google and drive traffic through blogging and keyword strategies'
     ],
   },
 ]
