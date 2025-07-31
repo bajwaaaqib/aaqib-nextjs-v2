@@ -48,7 +48,7 @@ const experiences: Experience[] = [
     description: [
       'Provided graphic design services to international clients in perfume, beauty, and fashion industries',
       'Built brand identities, packaging mockups, and visual guidelines for e-commerce businesses',
-      'Consulted startups on digital marketing strategies, SEO, and social media management'
+      'Consulted startups on digital marketing strategies, SEO, and social media management',
     ],
   },
   {
@@ -58,7 +58,7 @@ const experiences: Experience[] = [
     description: [
       'Developed websites using WordPress and React (Next.js) for local businesses',
       'Optimized sites for SEO using on-page, off-page, and technical techniques',
-      'Helped brands rank on Google and drive traffic through blogging and keyword strategies'
+      'Helped brands rank on Google and drive traffic through blogging and keyword strategies',
     ],
   },
 ]
