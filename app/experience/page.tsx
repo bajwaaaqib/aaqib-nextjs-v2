@@ -12,16 +12,33 @@ interface Experience {
 const experiences: Experience[] = [
   {
     company: 'ARD Perfumes Factory LLC',
-    role: 'Graphic Designer & Digital Marketer',
+    role: 'Graphic Designer & Digital Marketer with IT Support',
     duration: '2022 – Present | UAE',
     description: [
-      'Designed packaging, labels, and social media creatives for luxury perfume brands.',
-      'Managed Instagram, Facebook, TikTok, and LinkedIn accounts to drive brand awareness.',
-      'Planned and executed ad campaigns across Meta Ads Manager and Google Ads.',
-      'Collaborated with product development for branding and visualization.',
-      'Website Development and Maintenaance',
-      'E-commerce Solutions: WooCommerce, Noon, Amazon',
-      'Email Admistration and Security',
+      // New Product Development
+      'Developed product designs for bottles and packaging according to management briefs',
+      'Created and maintained NPD tracker sheets for all development projects',
+      'Coordinated with purchase department and suppliers for packaging samples',
+      'Conducted quality checks and ensured standards for all packaging materials',
+      'Managed timelines for packaging material delivery for NPD projects',
+      
+      // E-commerce and Digital Marketing
+      'Managed e-commerce platforms including Amazon, Noon, and company website',
+      'Created social media content (graphics, banners, promo campaigns, reels, stories)',
+      'Developed product launch marketing plans and activation strategies',
+      'Managed website hosting, security, updates, and domain administration',
+      'Implemented SEO optimization and published regular blog content',
+      'Designed brand promotion materials (catalogs, brochures, business cards, uniforms)',
+      'Coordinated with purchase department for marketing material procurement',
+      
+      // IT and Systems
+      'Managed complete IT infrastructure including servers and networking',
+      'Provided technical support for ERP and other business applications',
+      'Set up and managed company email systems for all employees',
+      'Ensured data, application, and server security against breaches',
+      'Maintained landline phone systems and resolved connectivity issues',
+      'Configured and maintained biometric access control systems',
+      'Managed security camera systems and IP configurations',
     ],
   },
   {
