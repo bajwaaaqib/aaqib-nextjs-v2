@@ -19,33 +19,32 @@ const experiences: Experience[] = [
     description: (
       <div className="space-y-4">
         <div>
-          <h4 className="mb-2 text-sm font-semibold">Product Design and development</h4>
-          <ul className="ml-4 space-y-1">
-            <li className="truncate text-sm">Designed perfume bottles and packaging</li>
-            <li className="truncate text-sm">Created product development tracking system</li>
-            <li className="truncate text-sm">Coordinated with suppliers for brand consistency</li>
-            <li className="truncate text-sm">Ensured packaging quality standards</li>
-            <li className="truncate text-sm">Product Photography and preparation for Ecommerce</li>
+          <h4 className="mb-2 text-sm font-semibold">Product Design & Development</h4>
+          <ul className="ml-4 list-disc space-y-1 text-sm">
+            <li>Designed perfume bottles and packaging</li>
+            <li>Created and maintained product development tracking system</li>
+            <li>Product Photography and preparation for digital assets</li>
+            <li>Ensured quality standards for all packaging components</li>
           </ul>
         </div>
 
         <div>
-          <h4 className="mb-2 text-sm font-semibold">Digital Marketing</h4>
-          <ul className="ml-4 space-y-1">
-            <li className="truncate text-sm">Managed Amazon/Noon e-commerce platforms</li>
-            <li className="truncate text-sm">Created social media campaigns</li>
-            <li className="truncate text-sm">Developed SEO strategy</li>
-            <li className="truncate text-sm">Produced brand collateral</li>
+          <h4 className="mb-2 text-sm font-semibold">Digital Marketing & E-Commerce</h4>
+          <ul className="ml-4 list-disc space-y-1 text-sm">
+            <li>Managed Amazon, Noon, and company e-commerce platforms</li>
+            <li>Created social media content and marketing campaigns</li>
+            <li>Developed SEO strategy and managed website content</li>
+            <li>Produced brand collateral (catalogs, brochures, uniforms)</li>
           </ul>
         </div>
 
         <div>
-          <h4 className="mb-2 text-sm font-semibold">IT Management</h4>
-          <ul className="ml-4 space-y-1">
-            <li className="truncate text-sm">Maintained IT infrastructure</li>
-            <li className="truncate text-sm">Provided technical support</li>
-            <li className="truncate text-sm">Managed data security</li>
-            <li className="truncate text-sm">Configured security systems</li>
+          <h4 className="mb-2 text-sm font-semibold">IT Systems Management</h4>
+          <ul className="ml-4 list-disc space-y-1 text-sm">
+            <li>Maintained company IT infrastructure and network systems</li>
+            <li>Provided technical support for business applications</li>
+            <li>Managed email systems and data security protocols</li>
+            <li>Configured security systems (CCTV, biometric access) with Technical team</li>
           </ul>
         </div>
       </div>
@@ -60,19 +59,18 @@ const experiences: Experience[] = [
       <div className="space-y-4">
         <div>
           <h4 className="mb-2 text-sm font-semibold">Graphic Design</h4>
-          <ul className="ml-4 space-y-1">
-            <li className="truncate text-sm">Created brand identities for 50+ clients</li>
-            <li className="truncate text-sm">Designed product packaging</li>
-            <li className="truncate text-sm">Produced social media visuals</li>
+          <ul className="ml-4 list-disc space-y-1 text-sm">
+            <li>Created brand identities and visual assets for 50+ clients</li>
+            <li>Designed product packaging and marketing collateral</li>
+            <li>Produced social media templates and campaign visuals</li>
           </ul>
         </div>
         <div>
           <h4 className="mb-2 text-sm font-semibold">Digital Marketing</h4>
-          <ul className="ml-4 space-y-1">
-            <li className="truncate text-sm">Managed social media accounts</li>
-            <li className="truncate text-sm">Ran targeted ad campaigns</li>
-            <li className="truncate text-sm">Developed email marketing</li>
-            <li className="truncate text-sm">Optimized website and maintenance</li>
+          <ul className="ml-4 list-disc space-y-1 text-sm">
+            <li>Managed social media accounts and content calendars</li>
+            <li>Ran targeted ad campaigns on Meta and Google Ads</li>
+            <li>Developed email marketing sequences and newsletters</li>
           </ul>
         </div>
       </div>
@@ -87,19 +85,18 @@ const experiences: Experience[] = [
       <div className="space-y-4">
         <div>
           <h4 className="mb-2 text-sm font-semibold">Website Development</h4>
-          <ul className="ml-4 space-y-1">
-            <li className="truncate text-sm">WordPress development</li>
-            <li className="truncate text-sm">Developed PHP applications</li>
-            <li className="truncate text-sm">Created Next.js frontends</li>
+          <ul className="ml-4 list-disc space-y-1 text-sm">
+            <li>Built custom WordPress themes and plugins</li>
+            <li>Developed PHP-based web applications</li>
+            <li>Created Next.js frontends with headless CMS backends</li>
           </ul>
         </div>
         <div>
           <h4 className="mb-2 text-sm font-semibold">Digital Marketing</h4>
-          <ul className="ml-4 space-y-1">
-            <li className="truncate text-sm">Implemented SEO strategies</li>
-            <li className="truncate text-sm">Set up analytics tracking</li>
-            <li className="truncate text-sm">Optimized website and maintenance</li>
-            <li className="truncate text-sm">Social Media Marketing</li>
+          <ul className="ml-4 list-disc space-y-1 text-sm">
+            <li>Implemented SEO strategies for client websites</li>
+            <li>Set up analytics and conversion tracking</li>
+            <li>Optimized websites for performance and maintenance</li>
           </ul>
         </div>
       </div>
@@ -127,12 +124,11 @@ export default function ExperiencePage() {
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300">{exp.role}</p>
               </div>
-              <div className="text-left">
+              <div className="text-right">
                 <p className="font-medium text-gray-900 dark:text-gray-100">{exp.duration}</p>
                 <p className="text-sm text-gray-500 dark:text-gray-400">{exp.location}</p>
               </div>
             </header>
-
             <div className="text-gray-700 dark:text-gray-300">{exp.description}</div>
           </article>
         ))}
