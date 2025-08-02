@@ -6,81 +6,137 @@ interface Experience {
   company: string
   role: string
   duration: string
-  description: string[]
+  location: string
+  description: React.ReactNode
 }
 
 const experiences: Experience[] = [
   {
     company: 'ARD Perfumes Factory LLC',
     role: 'Designer & IT Executive',
-    duration: '2022 – Present | UAQ, UAE',
-    description: [
-      // New Product Development
-      'Developed product designs for bottles and packaging according to management briefs',
-      'Created and maintained NPD tracker sheets for all development projects',
-      'Coordinated with purchase department and suppliers for packaging samples',
-      'Conducted quality checks and ensured standards for all packaging materials',
-      'Managed timelines for packaging material delivery for NPD projects',
+    duration: '2022 – Present',
+    location: 'UAQ, UAE',
+    description: (
+      <div className="space-y-4">
+        <div>
+          <h4 className="mb-2 text-sm font-semibold">Product Design and development</h4>
+          <ul className="ml-4 space-y-1">
+            <li className="truncate text-sm">Designed perfume bottles and packaging</li>
+            <li className="truncate text-sm">Created product development tracking system</li>
+            <li className="truncate text-sm">Coordinated with suppliers for brand consistency</li>
+            <li className="truncate text-sm">Ensured packaging quality standards</li>
+            <li className="truncate text-sm">Product Photography and preparation for Ecommerce</li>
+          </ul>
+        </div>
 
-      // E-commerce and Digital Marketing
-      'Managed e-commerce platforms including Amazon, Noon, and company website',
-      'Created social media content (graphics, banners, promo campaigns, reels, stories)',
-      'Developed product launch marketing plans and activation strategies',
-      'Managed website hosting, security, updates, and domain administration',
-      'Implemented SEO optimization and published regular blog content',
-      'Designed brand promotion materials (catalogs, brochures, business cards, uniforms)',
-      'Coordinated with purchase department for marketing material procurement',
+        <div>
+          <h4 className="mb-2 text-sm font-semibold">Digital Marketing</h4>
+          <ul className="ml-4 space-y-1">
+            <li className="truncate text-sm">Managed Amazon/Noon e-commerce platforms</li>
+            <li className="truncate text-sm">Created social media campaigns</li>
+            <li className="truncate text-sm">Developed SEO strategy</li>
+            <li className="truncate text-sm">Produced brand collateral</li>
+          </ul>
+        </div>
 
-      // IT and Systems
-      'Managed complete IT infrastructure including servers and networking',
-      'Provided technical support for ERP and other business applications',
-      'Set up and managed company email systems for all employees',
-      'Ensured data, application, and server security against breaches',
-      'Maintained landline phone systems and resolved connectivity issues',
-      'Configured and maintained biometric access control systems',
-      'Managed security camera systems and IP configurations',
-    ],
+        <div>
+          <h4 className="mb-2 text-sm font-semibold">IT Management</h4>
+          <ul className="ml-4 space-y-1">
+            <li className="truncate text-sm">Maintained IT infrastructure</li>
+            <li className="truncate text-sm">Provided technical support</li>
+            <li className="truncate text-sm">Managed data security</li>
+            <li className="truncate text-sm">Configured security systems</li>
+          </ul>
+        </div>
+      </div>
+    ),
   },
   {
     company: 'Upwork (Freelance)',
-    role: 'Freelance Graphic Designer & Social Media Specialist',
-    duration: '2018 – 2022 | Remote',
-    description: [
-      'Provided graphic design services to international clients in perfume, beauty, and fashion industries',
-      'Built brand identities, packaging mockups, and visual guidelines for e-commerce businesses',
-      'Consulted startups on digital marketing strategies, SEO, and social media management',
-    ],
+    role: 'Graphic Design & Digital Marketing Specialist',
+    duration: '2018 – 2022',
+    location: 'Remote',
+    description: (
+      <div className="space-y-4">
+        <div>
+          <h4 className="mb-2 text-sm font-semibold">Graphic Design</h4>
+          <ul className="ml-4 space-y-1">
+            <li className="truncate text-sm">Created brand identities for 50+ clients</li>
+            <li className="truncate text-sm">Designed product packaging</li>
+            <li className="truncate text-sm">Produced social media visuals</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="mb-2 text-sm font-semibold">Digital Marketing</h4>
+          <ul className="ml-4 space-y-1">
+            <li className="truncate text-sm">Managed social media accounts</li>
+            <li className="truncate text-sm">Ran targeted ad campaigns</li>
+            <li className="truncate text-sm">Developed email marketing</li>
+            <li className="truncate text-sm">Optimized website and maintenance</li>
+          </ul>
+        </div>
+      </div>
+    ),
   },
   {
-    company: 'Freelance Projects – Web & SEO',
-    role: 'Web Developer & SEO Consultant',
+    company: 'Freelance Projects',
+    role: 'Digital Marketing & Web Developer',
     duration: '2018 – Present',
-    description: [
-      'Developed websites using WordPress and React (Next.js) for local businesses',
-      'Optimized sites for SEO using on-page, off-page, and technical techniques',
-      'Helped brands rank on Google and drive traffic through blogging and keyword strategies',
-    ],
+    location: 'Remote',
+    description: (
+      <div className="space-y-4">
+        <div>
+          <h4 className="mb-2 text-sm font-semibold">Website Development</h4>
+          <ul className="ml-4 space-y-1">
+            <li className="truncate text-sm">WordPress development</li>
+            <li className="truncate text-sm">Developed PHP applications</li>
+            <li className="truncate text-sm">Created Next.js frontends</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="mb-2 text-sm font-semibold">Digital Marketing</h4>
+          <ul className="ml-4 space-y-1">
+            <li className="truncate text-sm">Implemented SEO strategies</li>
+            <li className="truncate text-sm">Set up analytics tracking</li>
+            <li className="truncate text-sm">Optimized website and maintenance</li>
+            <li className="truncate text-sm">Social Media Marketing</li>
+          </ul>
+        </div>
+      </div>
+    ),
   },
 ]
 
 export default function ExperiencePage() {
   return (
-    <main className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
-      <h1 className="mb-12 text-center text-4xl font-bold">Experience</h1>
-      <div className="space-y-10">
+    <section className="mx-auto max-w-3xl px-4 py-8">
+      <h1 className="mb-8 text-center text-3xl font-bold text-gray-900 dark:text-gray-100">
+        Professional Experience
+      </h1>
+
+      <div className="space-y-6">
         {experiences.map((exp, index) => (
-          <div key={index} className="rounded-2xl border bg-white p-6 shadow-md">
-            <h2 className="text-2xl font-semibold text-gray-800">{exp.company}</h2>
-            <p className="mb-1 text-sm text-gray-500 italic">{exp.role}</p>
-            <p className="mb-4 text-sm text-gray-400">{exp.duration}</p>
-            <ul className="list-inside list-disc space-y-2 text-gray-700">
-              {exp.description.map((item, idx) => (
-                <li key={idx}>{item}</li>
-              ))}
-            </ul>
-          </div>
+          <article
+            key={index}
+            className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+          >
+            <header className="mb-4 flex flex-col justify-between gap-2 sm:flex-row">
+              <div>
+                <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+                  {exp.company}
+                </h2>
+                <p className="text-gray-600 dark:text-gray-300">{exp.role}</p>
+              </div>
+              <div className="text-left">
+                <p className="font-medium text-gray-900 dark:text-gray-100">{exp.duration}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">{exp.location}</p>
+              </div>
+            </header>
+
+            <div className="text-gray-700 dark:text-gray-300">{exp.description}</div>
+          </article>
         ))}
       </div>
-    </main>
+    </section>
   )
 }
