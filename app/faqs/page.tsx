@@ -17,7 +17,7 @@ const faqs = [
     answer: 'You can email us at info@aaqibbajwa.com or use the contact form on our website.',
   },
   {
-    question: 'Do you design custom perfume packaging or Print Material?',
+    question: 'Do you design custom packaging or Print Material?',
     answer: 'Yes, I specialize in custom packaging and product visualization',
   },
   {
