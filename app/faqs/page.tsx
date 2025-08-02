@@ -32,7 +32,7 @@ const faqs = [
       'Yes, I build online stores using WooCommerce, Shopify, and custom React or Next.js e-commerce solutions.',
   },
   {
-    question: 'Can you help improve my website's SEO?',
+    question: 'Can you help improve my website\'s SEO?',
     answer:
       'Absolutely. I offer technical SEO audits, on-page optimization, keyword research, and content strategy.',
   },
